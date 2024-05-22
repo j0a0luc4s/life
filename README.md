@@ -2,13 +2,21 @@
 
 Conway's game of life implementation in C with raylib
 
-## Building raylib
+## Installing raylib dependencies
 
 Refer to raylib wiki
 
 ## Building
 
 ```
+git submodule init
+git submodule update
+cd raylib
+mkdir build
+cd build
+cmake ..
+make
+cd ../..
 make
 ```
 
