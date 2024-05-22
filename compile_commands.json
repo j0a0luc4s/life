@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-I./src",
+      "-I./raylib/build/raylib/include",
+      "-O3",
+      "-c",
+      "-o",
+      "build/./src/main.c.o",
+      "src/main.c"
+    ],
+    "directory": "/home/joao/Projects/life",
+    "file": "/home/joao/Projects/life/src/main.c",
+    "output": "/home/joao/Projects/life/build/src/main.c.o"
+  }
+]
