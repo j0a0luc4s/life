@@ -8,13 +8,12 @@ int main(void)
 
     while (!WindowShouldClose())
     {
+        monitor = GetCurrentMonitor();
         if (IsKeyPressed(KEY_F)) {
             if (IsWindowFullscreen()) {
-                monitor = GetCurrentMonitor();
                 SetWindowSize(GetMonitorWidth(monitor)/2, GetMonitorWidth(monitor)/2);
                 ToggleFullscreen();
             } else {
-                monitor = GetCurrentMonitor();
                 SetWindowSize(GetMonitorWidth(monitor), GetMonitorHeight(monitor));
                 ToggleFullscreen();
             }
@@ -22,7 +21,9 @@ int main(void)
 
         BeginDrawing();
             ClearBackground(RAYWHITE);
-            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+            char text[] = "Congrats! You created your first window!";
+            int textwidth = MeasureText(text, 20);
+            DrawText(text, (GetRenderWidth() - textwidth)/2, (GetRenderHeight() - 20)/2, 20, LIGHTGRAY);
         EndDrawing();
 
     }
