@@ -1,6 +1,6 @@
 # life
 
-Conway's game of life implementation in C with raylib
+Conway's game of life implementation in C++ with raylib
 
 ## Installing raylib dependencies
 
