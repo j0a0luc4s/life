@@ -3,15 +3,32 @@
     "arguments": [
       "/usr/bin/g++",
       "-I./src",
+      "-I./src/ds",
       "-I./raylib/build/raylib/include",
       "-O3",
       "-c",
       "-o",
-      "build/./src/main.c.o",
-      "src/main.c"
+      "build/./src/ds/board.cpp.o",
+      "src/ds/board.cpp"
     ],
     "directory": "/home/joao/Projects/life",
-    "file": "/home/joao/Projects/life/src/main.c",
-    "output": "/home/joao/Projects/life/build/src/main.c.o"
+    "file": "/home/joao/Projects/life/src/ds/board.cpp",
+    "output": "/home/joao/Projects/life/build/src/ds/board.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-I./src",
+      "-I./src/ds",
+      "-I./raylib/build/raylib/include",
+      "-O3",
+      "-c",
+      "-o",
+      "build/./src/main.cpp.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/joao/Projects/life",
+    "file": "/home/joao/Projects/life/src/main.cpp",
+    "output": "/home/joao/Projects/life/build/src/main.cpp.o"
   }
 ]
